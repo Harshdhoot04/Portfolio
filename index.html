@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 63);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(139, 139, 187);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(152, 100, 200);
+        }
+
+        #element {
+            color: rgb(152, 100, 200);
+        }
+
+        .secondSection, .thirdSection {
+            margin: 60px 20px;
+        }
+
+        .secondSection h2,
+        .thirdSection h2 {
+            font-size: 2rem;
+            color: rgb(152, 100, 200);
+            margin-bottom: 20px;
+        }
+
+        .secondSection p,
+        .thirdSection p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .skills {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: rgb(19, 19, 63);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 calc(33% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: rgb(19, 19, 63);
+            padding: 20px;
+            text-align: center;
+            color: rgb(139, 139, 187);
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: rgb(139, 139, 187);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: rgb(152, 100, 200);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harshvardhan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi! My name is <span class="purple">Harshvardhan Dhoot</span>
+                <div>and I am an engineering student passionate about technology and innovation.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h2>Education</h2>
+            <p>
+                <strong>Bachelor of Engineering in Electronics</strong> - MIT Academy of Engineering <br>
+                <em>Expected Graduation:</em> 2026 <br>
+            </p>
+        </section>
+
+        <section class="thirdSection">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Web Development (HTML, CSS, JavaScript)</div>
+                <div class="skill">Cybersecurity</div>
+                <div class="skill">Python Programming</div>
+                <div class="skill">Version Control (Git, GitHub)</div>
+                <div class="skill">Cloud Computing (AWS)</div>
+                <div class="skill">Problem Solving & Critical Thinking</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me at: <a href="mailto:harshvardhandhoot04@gmail.com">harshvardhandhoot04@gmail.com</a></p>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/harshvardhandhoot/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Harshdhoot04" target="_blank">GitHub</a> |
+        
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Cybersecurity Enthusiast', 'Engineering Student'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
